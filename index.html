@@ -4,84 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Document</title>    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css" integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="encabezado">
+      <div class="container">
+        <div class="row align-items-start">
+      <div class="col-1 logo">JLG</div>
+      <div class="col-11">
       <h1>Jose Luis Gerbino</h1>
-      <h2>Full Stack Developmen</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eum earum
-        cupiditate fugiat aperiam ab accusamus libero quam placeat deserunt
-        repudiandae aliquid quo, voluptatem nam dolorem labore reprehenderit,
-        vitae quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Sunt facere non corporis ipsam quis, sed minima omnis neque saepe
-        eveniet dolore dolorem nam soluta! Optio nemo officiis enim quod in?
+      <h3>Desarrollador Full Stack</h3>
+    </div>
+     </div>
+    </div>
+      <p class="descripcion">
+        Busco formar parte de un equipo pro-activo para poder seguir desarrolando mis habilidades. Enfrento los problemas con actitud positiva y siempre dispuesto a encontrar la solución.
       </p>
     </div>
     <div class="container text-center">
       <div class="row align-items-start">
         <div class="col-3">
-          <img class="img" src="img/foto.jpeg" alt="Jose Luis" />
-          <button id="contacto" class="boton1" type="button"><h4>Datos de contacto</h4></button>
-          <div id="datos"> 
-            <button id="ocultar" class="boton1" type="button">Mostrar menos</button>          
+          <img class="img img-circle" src="img/foto.jpeg" alt="Jose Luis" />
+          <button id="contacto" class="boton1 datos" type="button"><h4>Datos de contacto</h4></button>
+          <div id="datos" class="menu">
+            <button id="ocultar" class="boton2 datos" type="button"><h4>Datos de contacto</h4></button>            
              <div>
-                <h6>Dirección</h6>
+                <h6 class="datos">Dirección</h6>
                 <p>Rivadavia 732</p>
                 <p>Empalme Villa Constitución</p>
              </div>
              <div>
-                <h6>Teléfono</h6>
-                <p>03400-15667895</p>
+                <h6 class="datos">Teléfono</h6>
+                <p><a class="email" href="https://wa.me/54336650596" target="_blank"
+                  >0336-154650596</a></p>
              </div>
              <div>
-                <h6>E-mail</h6>
-                <p>joselgerbinogmail.com</p>
+                <h6 class="datos">E-mail</h6>
+                <p><a class="email" href="mailto: joselgerbino@gmail.com">joselgerbino@gmail.com</a></p>
              </div>
              <div>
-                <h6>Linkedin</h6>
+                <h6 class="datos">Linkedin</h6>
                 <p>linkedin.com/joselgerbino</p>
-             </div>
-             <!-- <button id="ocultar" type="button">minizar</button>` -->
+             </div>            
           </div>
           <div>
-            <button id="habilidades" class="boton1" type="button"><h4>Habilidades</h4></button>            
-            <div id="habil">
-            <button id="ocultar1" class="boton1" type="button">Mostrar menos</button>
+            <button id="habilidades" class="boton1 datos" type="button"><h4>Habilidades</h4></button>            
+            <div id="habil" class="menu">
+              <button id="ocultar1" class="boton2 datos" type="button"><h4>Habilidades</h4></button>            
             <p>Organizacion</p>
             <p>Comunicación efectiva</p>
             <p>Atención al cliente</p>
           </div>
           </div>
           <div>
-            <button id="idiomas" class="boton1" type="button"><h4>Idiomas</h4></button>            
+            <button id="idiomas" class="boton1 datos" type="button"><h4>Idiomas</h4></button>            
             <div id="idiom">
-            <button id="ocultar2" class="boton1" type="button">Mostrar menos</button>
+            <button id="ocultar2" class="boton2 datos" type="button"><h4>Idiomas</h4></button>            
             <p>Ingles medio</p>
             </div>
           </div>
         </div>
         <div class="col-9">
           <div>
-            <h3>Experiencia</h3>
+            <h3 class="datos"><i class="fa-solid fa-briefcase"></i>  Experiencia</h3>
+            <p>Atención al cliente</p>
             <p>Control de stock</p>
-            <p>Atencion a proveedores</p>
+            <p>Atención a proveedores</p>
           </div>
           <div>
-            <h3>Educación</h3>
+            <h3 class="datos"><i class="fa-solid fa-book"></i>  Educación</h3>
             <p>Analista de sistemas (incompleto)</p>
             <p>Desarrollador Full Stack</p>
           </div>
           <div>
-            <h3>Conocimientos informáticos</h3>
+            <h3 class="datos"><i class="fa-solid fa-desktop"></i>  Conocimientos informáticos</h3>
             <p>Desarrollo web</p>
             <p>HTML - CSS - SASS</p>
             <p>Git - GitHub</p>
@@ -93,12 +97,13 @@
         </div>
       </div>
     </div>
-    <footer>Jose Luis Gerbino</footer>
-    <script src="/index.js"></script>
+    <footer class="footer text-center sticky-bottom">Jose Luis Gerbino</footer>
+    <script src="/index.js"></script>    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </body>
 </html>
