@@ -25,6 +25,15 @@ document.getElementById("ocultar2").addEventListener("click", function(){
     document.getElementById("idiomas").style.display = "";   
 })
 
+document.getElementById("mPersonal").addEventListener("click", function(){        
+    document.getElementById("personal").style.display = "block"; 
+    document.getElementById("foto").style.display = "none";   
+})
+document.getElementById("mFoto").addEventListener("click", function(){
+    document.getElementById("personal").style.display = "none";
+    document.getElementById("foto").style.display = "";    
+})
+
 //Intente hacer algo mas generico para no repetir codigo pero no pude hacerlo funcionar!!!
 // const botonMostrar = document.querySelectorAll(".boton1");
 // const botonOcultar = document.querySelectorAll(".boton2");

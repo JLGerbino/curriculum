@@ -38,10 +38,17 @@ h6{
 #idiom{
     display: none;
 }
+ #personal{
+    display: none;
+ /*   width: 200px;
+    height: 230px;*/
+}
 .datos{
     color: rgb(20, 150, 171) ;
     background-color: gainsboro;
     border: none;
+    text-align: center;
+    justify-content: center;
     /*font-size: 12px;*/ 
 }
 .logo{
